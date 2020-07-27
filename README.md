@@ -6,6 +6,17 @@ In the project directory, you can run:
 
 `npm run fake-json`
 
+
+### `Technologies and libraries`
+
+In this project i use this technologies and libraries:
+
+`axios
+"classnames
+json-server
+node-sass
+react-router-dom`
+
 ### `npm start`
 
 Runs the app in the development mode.<br />
