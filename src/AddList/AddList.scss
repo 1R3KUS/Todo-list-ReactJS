@@ -1,0 +1,95 @@
+.addList {
+  margin-bottom: 50px;
+
+  &__button {
+    display: flex;
+    align-items: center;
+    width: 215px;
+    height: 40px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    flex: 1;
+    cursor: pointer;
+
+    span {
+      margin-left: 10px;
+    }
+
+    &:hover {
+        background-color: #313842;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    }
+    i {
+      svg {
+        fill:rgba(255, 255, 255, 0.7)
+      }
+    }
+  }
+
+
+  &__item {
+    * {color: #000;}
+    position: absolute;
+    width: 240px;
+    height: 150px;
+    left: 50px;
+    top: 353px;
+    padding: 20px;
+
+    background: #414957;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+    &_closeBtn {
+      position: absolute;
+      right: -8px;
+      top: -8px;
+      cursor: pointer;
+
+      svg {
+        fill:rgba(255, 255, 255, 0.9)
+      }
+    }
+
+    input {
+      width: 100%;
+      padding: 8px 10px;
+      border: 1px solid #EFEFEF;
+      border-radius: 4px;
+      color: #333333;
+      font-size: 14px;
+    }
+
+    .badgeItems {
+      display: flex;
+      justify-content: space-between;
+      margin: 15px 0;
+
+      
+
+      .active {
+        border: 2px solid #747474;
+      }
+
+      i {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        
+      }
+    }
+
+    .addButton {
+      width: 100%;
+      padding: 8px;
+      background: #4DD599;
+      border-radius: 4px;
+      border: transparent;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    
+  }
+
+}

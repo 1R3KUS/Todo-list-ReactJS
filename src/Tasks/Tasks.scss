@@ -1,0 +1,152 @@
+.tasks {
+
+  
+
+  &:not(:last-child) {
+    margin-bottom: 60px;
+  }
+
+  &__title {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #313842;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 40px;
+
+    &:hover {
+      i {
+        opacity: 0.5;
+      }
+    }
+
+    h1 {
+      flex: 1;
+      font-family: Montserrat;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 39px;
+    }
+
+    i {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      width: 25px;
+      opacity: 0;
+      fill: #fff;
+      
+      
+
+      &:hover {
+        transition: opacity 0.15s ease-in-out;
+        opacity: 0.9;
+      }
+    }
+  }
+
+  &__item {
+
+    .task {
+      display: flex;
+      padding: 10px 20px;
+      margin: 0 0 10px;
+      background-color: #414957;
+      border-radius: 5px;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+
+      i {
+        cursor: pointer;
+        svg {
+          opacity: 0;
+          fill: #fff;
+        }
+      }
+
+      &:hover {
+        i {
+          svg {
+            opacity: 0.6;
+            
+            &:hover {
+              transition: opacity 0.15s ease-in-out;
+              opacity: 1;
+              fill: rgb(255, 48, 48);
+            }
+          }
+        }
+
+      }
+
+      p {
+        flex: 1;
+        font-size: 18px;
+        line-height: 19px;
+      }
+    }
+  }
+
+
+
+  .addTask {
+
+    margin-top: 50px;
+
+    &__button{
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      font-size: 14px;
+      background-color: #313842;
+      border-radius: 5px;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+
+      i {
+        svg {
+          width: 18px;
+          fill: rgba(255, 255, 255, 0.7);
+        }
+      }
+    }
+
+    &__items {
+      *{color: #000;}
+
+      &:not(:first-child) {
+      }
+
+      input {
+        width: 100%;
+        padding: 8px 10px;
+        border: 1px solid #EFEFEF;
+        border-radius: 4px;
+        color: #333333;
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+
+      .addButton {
+        width: 150px;
+        padding: 8px;
+        background: #4DD599;
+        border-radius: 4px;
+        border: transparent;
+        color: #fff;
+        cursor: pointer;
+        margin-right: 10px;
+
+        &_remove {
+          width: 100px;
+          background-color: #F4F6F8;
+          color: #9C9C9C;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
