@@ -7,7 +7,7 @@ In the project directory, you can run:
 `npm run fake-json`
 
 
-### `Technologies and libraries`
+### Technologies and libraries
 
 In this project i use this technologies and libraries:
 
